@@ -501,7 +501,7 @@
   .contact-left {
     width: 35%;
     background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-      url(./assets/images/contact-bg.jpg) center no-repeat;
+      url(/images/contact-bg.jpg) center no-repeat;
     background-size: cover;
   }
   .contact-right {
@@ -535,7 +535,7 @@
     padding: 1rem 1rem 1rem 0;
     font-family: "Mulish", serif;
     font-size: 1.6rem;
-    color: #4B4B4B;
+    color: #4b4b4b;
   }
   .input-group input {
     height: 4rem;
@@ -763,4 +763,53 @@
     }
     .input-group textarea {
       max-width: 35rem;
+    }
+    .submit-btn {
+      width: 55rem;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+    .copyright {
+      order: 1;
+      margin-top: 3rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .banner h1 {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    .banner p {
+      font-size: 2rem;
+    }
+    .field {
+      width: 35rem;
+    }
+    .input-group textarea {
+      max-width: 35rem;
+    }
+    .submit-btn {
+      width: 35rem;
+    }
+  }
+  @media (max-width: 500px) {
+    html {
+      font-size: 45%;
+    }
+    .sidebar {
+      width: 100%;
+      right: -100%;
+    }
+    .change .hamburger-menu {
+      right: 38rem;
+    }
+    .service {
+      width: 30rem;
+    }
+    .footer {
+      height: 18rem;
     }
